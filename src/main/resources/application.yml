@@ -6,5 +6,6 @@ spring:
       enabled: true
   profiles:
     include: oauth
-
+  session:
+    store-type: jdbc
 debug: true
