@@ -21,6 +21,9 @@ fi
 echo "> 새 애플리케이션 배포"
 JAR_NAME=$(ls -tr $REPOSITORY/ |grep *.jar | tail -n 1)
 
+echo "> step2 디렉토리 이동"
+cd $REPOSITORY
+
 echo "> JAR NAME: $JAR_NAME"
 
 echo "> $JAR_NAME 에 실행권한 추가"
