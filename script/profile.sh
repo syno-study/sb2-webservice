@@ -2,7 +2,7 @@
 
 # 쉬고 있는 프로파일 찾기 : real1이 사용중이면real2가쉬고있고, 반대면 real1이 쉬고있음
 
-function find_idel_profile() {
+function find_idle_port() {
     RESPONSE_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://localhost/profile)
 
     if [ ${RESPONSE_CODE} -ge 400 ] #400보다 크면 에러포함
