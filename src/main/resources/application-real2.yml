@@ -1,0 +1,14 @@
+server:
+  port: 8082
+spring:
+  profiles:
+    include: oauth,real-db
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    datasource:
+      hikari:
+        jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL
+  session:
+    store-type: jdbc
