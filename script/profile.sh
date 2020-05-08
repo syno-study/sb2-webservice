@@ -24,7 +24,7 @@ function find_idle_profile() {
 }
 #쉬고있는 프로파일 찾기
 function find_idle_port() {
-  IDLE_PROFILE=$(find_idel_profile)
+  IDLE_PROFILE=$(find_idle_profile)
 
   if [ ${IDLE_PROFILE} == real1 ]
   then

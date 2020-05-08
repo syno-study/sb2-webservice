@@ -2,11 +2,12 @@
 
 ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
-source ${ABSPATH}/profile.sh
+source ${ABSDIR}/profile.sh
 source ${ABSDIR}/switch.sh
 
 IDEL_PORT=$(find_idle_port)
 
+echo "> ABSPATH: $ABSPATH , ABSDIR: $ABSDIR"
 echo "> health check start"
 echo "> IDEL_PORT: $IDEL_PORT"
 echo "> curl -s http://localhost:$IDEL_PORT/profile"
